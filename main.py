@@ -9,3 +9,5 @@ full_name = lambda first_name, last_name: f"{first_name} {last_name}"
 grade_status = lambda grade: "pass" if grade >= 55 else "fail"
 # step 5 - Larger number
 larger = lambda num1, num2: num1 if num1 > num2 else num2
+# step 6 - Distance from 10
+distance_from_10 = lambda num1: 10 - num1 if num1 < 10 else num1 - 10
