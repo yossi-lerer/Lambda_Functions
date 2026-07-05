@@ -54,5 +54,13 @@ students = [
     ("Noa", 78)
 ]
 
-x = sorted(students, key = lambda grade: grade[1])
-print(x)
+res = sorted(students, key = lambda grade: grade[1])
+print(res)
+# step 3
+students = [
+    {"name": "Dana", "grade": 85},
+    {"name": "Eli", "grade": 92},
+    {"name": "Noa", "grade": 78}
+]
+res = sorted(students, key = lambda grade: grade["grade"])
+print(res)
