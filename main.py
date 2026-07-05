@@ -20,3 +20,9 @@ print(distance_from_10(7))
 # step 7 - Get item total
 item_total = lambda item: f'total price of the item: {item["price"] * item["amount"]}'
 print(item_total({"name": "Pen", "price": 5, "amount": 10}))
+# step 8 - Turn a regular complex function into a lambda
+shipping_cost = lambda weight, express: 50 if express and weight > 5 else 30 if express else 25 if weight > 5 else 10 
+print(shipping_cost(3, True))
+print(shipping_cost(8, True))
+print(shipping_cost(8, False))
+print(shipping_cost(2, False))
