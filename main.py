@@ -47,3 +47,12 @@ print(ticket_price(20, False))
 numbers = [5, 2, 9, 1, 7]
 numbers.sort()
 print(numbers)
+# step 2
+students = [
+    ("Dana", 85),
+    ("Eli", 92),
+    ("Noa", 78)
+]
+
+x = sorted(students, key = lambda grade: grade[1])
+print(x)
