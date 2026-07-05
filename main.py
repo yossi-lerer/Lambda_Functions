@@ -1,13 +1,22 @@
 # part 1
 # step 1 - Manager son price
 manager_son_price = lambda price, is_manager_son: price * 0.8 if is_manager_son == True else price + (price * 0.17)
+print(manager_son_price(100, True))
 # step 2 - Final price after discount
-final_price = lambda price, discount: price / 100 * (100 - discount)
+final_price = lambda price, discount: price / 100 * (100 - discount) if 0 < discount <= 100 else None
+print(final_price(100, 20))
 # step 3 - Full name
 full_name = lambda first_name, last_name: f"{first_name} {last_name}" 
+print(full_name("Dana", "Levi"))
 # step 4 - Grade status
 grade_status = lambda grade: "pass" if grade >= 55 else "fail"
+print(grade_status(80))
 # step 5 - Larger number
 larger = lambda num1, num2: num1 if num1 > num2 else num2
+print(larger(10, 7))
 # step 6 - Distance from 10
 distance_from_10 = lambda num1: 10 - num1 if num1 < 10 else num1 - 10
+print(distance_from_10(7))
+# step 7 - Get item total
+item_total = lambda item: f'total price of the item: {item["price"] * item["amount"]}'
+print(item_total({"name": "Pen", "price": 5, "amount": 10}))
