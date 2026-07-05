@@ -7,3 +7,5 @@ final_price = lambda price, discount: price / 100 * (100 - discount)
 full_name = lambda first_name, last_name: f"{first_name} {last_name}" 
 # step 4 - Grade status
 grade_status = lambda grade: "pass" if grade >= 55 else "fail"
+# step 5 - Larger number
+larger = lambda num1, num2: num1 if num1 > num2 else num2
